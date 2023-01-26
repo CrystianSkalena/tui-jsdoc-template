@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Home</title>
 
     <script src="scripts/prettify/prettify.js"></script>
@@ -23,21 +21,27 @@
   <body>
     <nav class="lnb" id="lnb">
       <div class="logo">
-        <img src="./img/agrofit.svg" alt="logoAgrofit" width="150vmax"/>
+        <img
+          src="./img/agrofit.svg"
+          width="100%"
+          height="100%"
+          alt="logoAgrofit"
+        />
       </div>
       <div class="title">
         <h1><a href="index.html" class="link">Home</a></h1>
       </div>
       <div class="search-container" id="search-container">
         <input type="text" placeholder="Search" />
+        <ul></ul>
       </div>
 
       <div class="lnb-api hidden">
         <h3>Classes</h3>
         <ul>
           <li>
-            <a href="Alive.html">Alive</a>
-            <button type="button" class="hidden toggle-subnav btn btn-link">
+            <a href="Alive.html">Alive</a
+            ><button type="button" class="hidden toggle-subnav btn btn-link">
               <span class="glyphicon glyphicon-plus"></span>
             </button>
             <div class="hidden" id="Alive_sub">
@@ -52,8 +56,8 @@
             </div>
           </li>
           <li>
-            <a href="Apple.html">Apple</a>
-            <button type="button" class="hidden toggle-subnav btn btn-link">
+            <a href="Apple.html">Apple</a
+            ><button type="button" class="hidden toggle-subnav btn btn-link">
               <span class="glyphicon glyphicon-plus"></span>
             </button>
             <div class="hidden" id="Apple_sub">
@@ -136,12 +140,13 @@
         <h3><a href="global.html">Global</a></h3>
       </div>
     </nav>
+    <div id="resizer"></div>
 
     <div class="main" id="main"></div>
 
     <footer>
-      <img class="logo" src="./img/skalena.png" alt=""/>
-      <div class="footer-text">Powered by SKALENA API Manager</div>
+      <img class="logo" src="img/toast-ui.png" style="" />
+      <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
     </footer>
     <script>
       prettyPrint();
